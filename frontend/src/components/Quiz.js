@@ -156,7 +156,7 @@ const Quiz = () => {
     <div className="quiz-app">
       <header>
         <h1>Welcome to the Quiz App</h1>
-        <p>Select a category and difficulty to start</p>
+        <p>Select a category and difficulty to start!</p>
       </header>
 
       {!quizStarted ? (

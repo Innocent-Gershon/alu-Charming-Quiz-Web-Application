@@ -69,7 +69,7 @@ p {
 
 /* Filters Section */
 .filters {
-  background-color: rgba(169, 165, 165, 0.85); /* Slightly transparent background so the image shows through */
+  background-color: hsla(0, 1%, 58%, 0.821); /* Slightly transparent background so the image shows through */
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
