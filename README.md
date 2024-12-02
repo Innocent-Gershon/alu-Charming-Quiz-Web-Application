@@ -60,5 +60,11 @@ When testing, error persisted, but I made sure the test was successful.
 C. Verification
 I accessed http://Lb01_IP in my browser to confirm that requests were distributed between Web01 and Web02.
 
+After installing Nginx and making the necessary edits to the configuration file, the load balancer was not properly balancing between web-01 and web-02.
+
+To resolve this, I installed HAProxy and made the required changes to its configuration as well. However, when I tested the HAProxy configuration file, I encountered an error indicating that port 80 was already being used by another process.
+
+Upon investigation, I discovered that Nginx was using port 80. I had to stop the Nginx service and restart HAProxy. After doing so, HAProxy ran successfully.
+
 Conclusion
 By following the steps above, I successfully deployed the Quiz Web Application across Web01 and Web02 and ensured that Lb01 distributed traffic effectively. The application functions seamlessly, even under simulated server failures. This setup guarantees scalability, high availability, and reliability.
